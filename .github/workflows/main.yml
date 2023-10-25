@@ -29,7 +29,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Run black formatter
+      - name: Run black formatteri
+      - uses: actions/checkout@v2
       - uses: rickstaa/action-black@v1.3.1
      	with:
           black_args: ". --check"
